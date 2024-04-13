@@ -1,18 +1,21 @@
 import "./App.css";
 import Header from "./Components/Header.js";
 import Todoadd from "./Components/TodoCard_Adder.js";
-
+import TodoCardList from "./Components/TodoCardList.js";
 import { useState } from "react";
+
 function App() {
-  const [todo_data, set_tododata] = useState([]);
-  const handle_todo = (data_from_adder) => {
-    set_tododata(data_from_adder);
+  const [data, setdata] = useState([]);
+  const handledata = (senddata) => {
+    setdata([...data, senddata]);
   };
-  console.log(todo_data);
+  console.log(data);
+
   return (
     <div>
       <Header />
-      <Todoadd senddata={handle_todo} />
+      <Todoadd sendata={handledata} />
+      <TodoCardList data={data} />
     </div>
   );
 }

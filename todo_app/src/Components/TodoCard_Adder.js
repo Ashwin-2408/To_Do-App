@@ -2,7 +2,7 @@ import { useState } from "react";
 import React from "react";
 import "./Todocard_adder.css";
 
-const Todoadd = ({ senddata }) => {
+const Todoadd = ({ sendata }) => {
   const [todo, newtodo] = useState([]);
   const [title, newtitle] = useState("");
   const [description, new_description] = useState("");
@@ -11,18 +11,18 @@ const Todoadd = ({ senddata }) => {
     e.preventDefault();
     const new_todo = {
       id: todo.length + 1,
-      title: { title },
-      description: { description },
+      title: title,
+      description: description,
     };
     newtodo([...todo, new_todo]);
     newtitle("");
     new_description("");
-    senddata(todo);
+    sendata(new_todo);
   };
 
   return (
     <div className="Form">
-      <h2>Todo Adder</h2>
+      <h2>Add Work</h2>
       <form onSubmit={handle_Submission}>
         <input
           type="text"
