@@ -1,0 +1,19 @@
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .content-container {
+    display: flex;
+    flex: 1;
+  }
+  
+  .left-half {
+    flex: 1;
+  }
+  
+  .right-half {
+    flex: 1;
+  }
+  

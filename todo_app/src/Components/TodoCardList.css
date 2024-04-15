@@ -1,0 +1,11 @@
+.todo_list{
+    border:solid black
+}
+
+
+
+.work_preview{
+    border: solid black;
+    height: 100px;
+    width: 100px;
+}
