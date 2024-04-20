@@ -22,7 +22,7 @@ const Todoadd = ({ sendata }) => {
 
   return (
     <div className="Form">
-      <h2>Add Work</h2>
+      <h1>Add Work</h1>
       <form onSubmit={handle_Submission}>
         <input
           type="text"

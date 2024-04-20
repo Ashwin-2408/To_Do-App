@@ -1,13 +1,14 @@
-*{
+* {
     text-align: center;
-}
-.Container{
-    padding-top: 20px;
-    border: 2px;
-    border-bottom: 4px;
-    border: solid black;
-    border-top: transparent;
-    border-right: transparent;
-    border-left: transparent;
-    padding-bottom: 20px;
-}
+  }
+  
+  .Container {
+    padding: 20px 0; /* Set equal padding on top and bottom */
+     /* Simplify border shorthand */
+    color:#E8D5B5;
+    background-color: #573294;
+    
+    
+  }
+  
+  

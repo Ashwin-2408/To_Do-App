@@ -7,11 +7,8 @@ function App() {
   return (
     <div className="app-container">
       <Header />
-      <div className="content-container">
-        <div className="right-half">
-          <TodoCardList />
-        </div>
-      </div>
+
+      <TodoCardList />
     </div>
   );
 }
