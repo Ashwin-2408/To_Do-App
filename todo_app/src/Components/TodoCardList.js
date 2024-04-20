@@ -3,6 +3,7 @@ import { ImBin } from "react-icons/im";
 import "./TodoCardList.css";
 import Todoadd from "./TodoCard_Adder";
 import WorkingTasks from "./WorkingTask";
+import { IoCheckbox } from "react-icons/io5";
 
 const TodoCardList = () => {
   const [data, setData] = useState([]);
@@ -30,12 +31,16 @@ const TodoCardList = () => {
       <div className="todo_list">
         <Todoadd sendata={handleData} />
         <h2>Pending Tasks</h2>
+        <h4>Task Name</h4>
+        <h4>Description</h4>
+        <h4>Edit</h4>
+        <h4>Remove</h4>
         {data.map((todos) => (
           <div className="work_preview" key={todos.id}>
-            <p>Work Name is {todos.title}</p>
-            <p>description is {todos.description}</p>
+            <p> {todos.title}</p>
+            <p>{todos.description}</p>
             <ImBin onClick={() => handle_Delete(todos.id)} />
-            <button onClick={() => working(todos.id)}>completed</button>
+            <IoCheckbox onClick={() => working(todos.id)} />
           </div>
         ))}
       </div>

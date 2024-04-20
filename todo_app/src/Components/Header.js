@@ -1,9 +1,11 @@
 import "./Header.css";
+import { IoHomeSharp } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className="Container">
-      <h1 className="text">MY TASKS</h1>
+    <div className="Header-Container">
+      <IoHomeSharp className="home-button" />
+      <h1 className="text">WORK ORGANISER</h1>
     </div>
   );
 };
