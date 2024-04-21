@@ -11,7 +11,7 @@ const Working_Tasks = ({ work_list }) => {
         <div key={work.id}>
           <p>Work Name is {work.title}</p>
           <p>description is {work.description}</p>
-          <ImBin onClick={() => handle_Delete(todos.id)} />
+          <ImBin />
         </div>
       ))}
     </div>
