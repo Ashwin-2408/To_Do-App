@@ -27,14 +27,15 @@ const TodoCardList = () => {
   };
 
   return (
-    <div>
+    <div className="List_preview">
       <div className="todo_list">
         <Todoadd sendata={handleData} />
-        <h2>Pending Tasks</h2>
-        <h4>Task Name</h4>
-        <h4>Description</h4>
-        <h4>Edit</h4>
-        <h4>Remove</h4>
+        <div className="Headings">
+          <h2>Pending Tasks</h2>
+          <h2>In Progress</h2>
+          <h2>Completed</h2>
+        </div>
+
         {data.map((todos) => (
           <div className="work_preview" key={todos.id}>
             <p> {todos.title}</p>

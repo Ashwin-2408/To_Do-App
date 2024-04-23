@@ -1,0 +1,13 @@
+.List_preview{
+    border:solid black 2px;
+    width: 680px;
+    height: 510px;
+}
+.Headings{
+    display:flex;
+    justify-content: space-between;
+
+}
+.Headings h2{
+    border: solid black;
+}
