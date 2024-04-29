@@ -1,0 +1,24 @@
+.List_preview{
+    border:solid black 2px;
+    width: 680px;
+    height: 510px;
+}
+.Headings{
+    display:flex;
+    width: 100%;
+    background-color:#FBEAFF;
+
+}
+ .but{
+    border: solid #190933;
+    width: 100%;
+    text-align: center;
+}
+.work_preview{
+    border: solid black 1px;
+    background-color: #FBEAFF   ;
+    padding: 1rem;
+    border-radius: .25rem;
+
+
+}
